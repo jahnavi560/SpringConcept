@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="DetailBean" class="SICollection2.Detail">
+		<property name="language"  value="Hindi"></property>
+		<property name="read" value="read"></property>
+		<property name="write" value="write"></property>
+		<property name="speak" value="speak"></property>
+	</bean>
+
+	<bean id="DetailBean2" class="SICollection2.Detail">
+		<property name="language" value="English"></property>
+		<property name="read" value="read"></property>
+		<property name="speak" value="speak"></property>
+		<property name="write" value="write"></property>
+	</bean>
+
+
+	<bean id="EmployeeBean" class="SICollection2.Employee">
+		<property name="name" value="jahnavi thacker"></property> 
+		<property name="id" value="10"></property> 
+
+		<property name="languages">
+			<list>
+				<ref bean="DetailBean" />
+				<ref bean="DetailBean2" />
+			</list>
+		</property>
+	</bean>
+
+</beans>  
