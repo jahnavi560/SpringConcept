@@ -7,9 +7,8 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
 <bean id="StudentBean" class="SIStringInt.Student">  
- <property name="name" value="jahnavi thacker"></property> 
+<property name="name" value="jahnavi thacker"></property> 
 <property name="id" value="10"></property> 
-
 </bean>  
   
 </beans>  
