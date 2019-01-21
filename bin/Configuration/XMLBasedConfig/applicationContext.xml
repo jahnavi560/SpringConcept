@@ -6,13 +6,13 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
-<bean id="AddressBean" class="CIObject.Address">  
+<bean id="AddressBean" class="Configuration.XMLBasedConfig.Address">  
 <constructor-arg value="Anjar"></constructor-arg>
 <constructor-arg value="Gujarat"></constructor-arg>
 <constructor-arg value="India"></constructor-arg>
 </bean>  
   
-<bean id="EmployeeBean" class="CIObject.Employee">  
+<bean id="EmployeeBean" class="Configuration.XMLBasedConfig.Employee">  
 <constructor-arg value="10"></constructor-arg>
 <constructor-arg value="Jahnavi"></constructor-arg>
 <constructor-arg ref="AddressBean"/>

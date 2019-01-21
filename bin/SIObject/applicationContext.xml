@@ -17,5 +17,4 @@
 <property name="name" value="jahnavi"></property>
 <property name="address" ref="AddressBean"></property>
 </bean>  
-  
 </beans>  

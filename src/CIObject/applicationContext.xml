@@ -15,8 +15,7 @@
 <bean id="EmployeeBean" class="CIObject.Employee">  
 <constructor-arg value="10"></constructor-arg>
 <constructor-arg value="Jahnavi"></constructor-arg>
-<constructor-arg><ref bean="AddressBean"/>
-</constructor-arg>
+<constructor-arg ref="AddressBean"/>
 </bean>  
   
 </beans>  

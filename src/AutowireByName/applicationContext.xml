@@ -6,7 +6,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-
-	<bean id="ABean1" class="AutowireByName.A" autowire="byName"></bean>
-	<bean id="b" class="AutowireByName.B" />
+<bean id="b" class="AutowireByName.B" />
+	<bean id="ABean1" class="AutowireByName.A" autowire="byName">
+	</bean>
+	
 </beans>  
